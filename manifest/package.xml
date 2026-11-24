@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>EmpreendimentosApi</members>
+        <members>EmpreendimentosApiMocks</members>
+        <members>EmpreendimentosApiTest</members>
+        <members>EmpreendimentosDTO</members>
+        <members>EmpreendimentosDTOTest</members>
+        <members>EmpreendimentosIntegracaoQueueable</members>
+        <members>EmpreendimentosIntegracaoSchedule</members>
+        <members>EmpreendimentosIntegracaoTest</members>
+        <members>EmpreendimentosService</members>
+        <members>EmpreendimentosServiceTest</members>
+        <members>EmpreendimentosTestFactory</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CA_Empreendimento__c</members>
+        <members>CA_Unidade__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>CA_Empreendimento__c</members>
+        <members>CA_Unidade__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>CA_Empreendimento__c-Empreendimento Layout</members>
+        <members>CA_Unidade__c-Unidade Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>CA_OrgBase</members>
+        <name>ExternalCredential</name>
+    </types>
+    <types>
+        <members>CA_OrgBase</members>
+        <name>NamedCredential</name>
+    </types>
+    <types>
+        <members>CA_IntegracaoOrgBase</members>
+        <members>CA_IntegracaoOrgBaseExecutor</members>
+        <members>CA_PermissoeesIntegracao</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>67.0</version>
+</Package>
