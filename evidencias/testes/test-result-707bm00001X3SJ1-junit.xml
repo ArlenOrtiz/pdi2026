@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2026-11-17T16:44:30.000Z" hostname="https://co1782129172879.my.salesforce.com" tests="22" failures="0"  errors="0"  time="4.12">
+        <properties>
+            <property name="outcome" value="Successful"/>
+            <property name="testsRan" value="22"/>
+            <property name="passing" value="22"/>
+            <property name="failing" value="0"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="100%"/>
+            <property name="failRate" value="0%"/>
+            <property name="testStartTime" value="Tue Nov 17 2026 13:44:30"/>
+            <property name="testSetupTimeInMs" value="7528"/>
+            <property name="testExecutionTime" value="4.12 s"/>
+            <property name="testTotalTime" value="11.64 s"/>
+            <property name="commandTime" value="0.30 s"/>
+            <property name="hostname" value="https://co1782129172879.my.salesforce.com"/>
+            <property name="orgId" value="00Dbm00000nAZreEAG"/>
+            <property name="username" value="arlen.ortiz@codeart.solutions.sdo"/>
+            <property name="testRunId" value="707bm00001X3SJ1"/>
+            <property name="userId" value="005bm00000RJuyDAAT"/>
+            <property name="coveredLines" value="225"/>
+            <property name="testRunCoverage" value="92%"/>
+            <property name="orgWideCoverage" value="0%"/>
+        </properties>
+        <testcase name="queueableDeveExecutarAImportacao" classname="EmpreendimentosIntegracaoTest" time="1.25">
+        </testcase>
+        <testcase name="scheduleDeveAgendarACada4Horas" classname="EmpreendimentosIntegracaoTest" time="0.33">
+        </testcase>
+        <testcase name="deveClassificar401ComoAutenticacao" classname="EmpreendimentosApiTest" time="0.09">
+        </testcase>
+        <testcase name="deveClassificar503ComoIndisponivel" classname="EmpreendimentosApiTest" time="0.03">
+        </testcase>
+        <testcase name="deveClassificarJsonInvalidoComoRespostaInvalida" classname="EmpreendimentosApiTest" time="0.02">
+        </testcase>
+        <testcase name="deveClassificarJsonInvalidoNaPaginaDeUnidadesComoRespostaInvalida" classname="EmpreendimentosApiTest" time="0.12">
+        </testcase>
+        <testcase name="deveClassificarOutrosStatusComoRejeitada" classname="EmpreendimentosApiTest" time="0.02">
+        </testcase>
+        <testcase name="deveClassificarPaginacaoSemProximaUrlComoRespostaInvalida" classname="EmpreendimentosApiTest" time="0.02">
+        </testcase>
+        <testcase name="deveClassificarTimeoutComoIndisponivel" classname="EmpreendimentosApiTest" time="0.02">
+        </testcase>
+        <testcase name="deveSeguirPaginacaoDeEmpreendimentosEUnidades" classname="EmpreendimentosApiTest" time="0.02">
+        </testcase>
+        <testcase name="deveDesfazerTudoQuandoGravacaoDasUnidadesFalha" classname="EmpreendimentosServiceTest" time="0.57">
+        </testcase>
+        <testcase name="deveImportarComOPerfilDoUsuarioQueAgendaOJob" classname="EmpreendimentosServiceTest" time="0.60">
+        </testcase>
+        <testcase name="deveInserirNovosEAtualizarExistentesSemDuplicar" classname="EmpreendimentosServiceTest" time="0.39">
+        </testcase>
+        <testcase name="naoDeveGravarQuandoIndisponivel" classname="EmpreendimentosServiceTest" time="0.16">
+        </testcase>
+        <testcase name="naoDeveGravarQuandoNaoAutorizado" classname="EmpreendimentosServiceTest" time="0.14">
+        </testcase>
+        <testcase name="naoDeveGravarQuandoOcorreTimeout" classname="EmpreendimentosServiceTest" time="0.14">
+        </testcase>
+        <testcase name="naoDeveGravarQuandoRespostaInvalida" classname="EmpreendimentosServiceTest" time="0.14">
+        </testcase>
+        <testcase name="deveConverterUnidadeComNumerosNulos" classname="EmpreendimentosDTOTest" time="0.04">
+        </testcase>
+        <testcase name="deveLancarExcecaoQuandoNumeroEstiverForaDoContrato" classname="EmpreendimentosDTOTest" time="0.02">
+        </testcase>
+        <testcase name="deveTratarEmpreendimentoSemUnidadesECamposNulos" classname="EmpreendimentosDTOTest" time="0.01">
+        </testcase>
+        <testcase name="deveTratarPaginaSemRecords" classname="EmpreendimentosDTOTest" time="0.01">
+        </testcase>
+    </testsuite>
+</testsuites>

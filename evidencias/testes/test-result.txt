@@ -1,0 +1,74 @@
+=== Test Results
+TEST NAME                                                                                       OUTCOME  MESSAGE                                                                                                                                                           RUNTIME (MS)
+──────────────────────────────────────────────────────────────────────────────────────────────  ───────  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  ────────────
+EmpreendimentosDTOTest.deveConverterUnidadeComNumerosNulos                                      Pass                                                                                                                                                                       136         
+EmpreendimentosDTOTest.deveLancarExcecaoQuandoNumeroEstiverForaDoContrato                       Pass                                                                                                                                                                       34          
+EmpreendimentosDTOTest.deveTratarEmpreendimentoSemUnidadesECamposNulos                          Pass                                                                                                                                                                       33          
+EmpreendimentosDTOTest.deveTratarPaginaSemRecords                                               Pass                                                                                                                                                                       35          
+EmpreendimentosIntegracaoTest.queueableDeveExecutarAImportacao                                  Pass                                                                                                                                                                       1062        
+EmpreendimentosIntegracaoTest.scheduleDeveAgendarACada4Horas                                    Pass                                                                                                                                                                       393         
+EmpreendimentosIntegracaoFinalizerTest.deveRegistrarLogQuandoQueueTerminaComExcecaoNaoTratada   Pass                                                                                                                                                                       259         
+EmpreendimentosIntegracaoFinalizerTest.naoDeveRegistrarLogQuandoQueueTerminaComSucesso          Pass                                                                                                                                                                       14          
+OrgOriginGetEmpreendimentosApiTest.deveClassificar401ComoAutenticacao                           Pass                                                                                                                                                                       82          
+OrgOriginGetEmpreendimentosApiTest.deveClassificar503ComoIndisponivel                           Pass                                                                                                                                                                       42          
+OrgOriginGetEmpreendimentosApiTest.deveClassificarFalhaNoTokenComoAutenticacao                  Pass                                                                                                                                                                       21          
+OrgOriginGetEmpreendimentosApiTest.deveClassificarOutrosStatusComoRejeitada                     Pass                                                                                                                                                                       17          
+OrgOriginGetEmpreendimentosApiTest.deveClassificarTimeoutComoIndisponivel                       Pass                                                                                                                                                                       18          
+OrgOriginGetEmpreendimentosApiTest.deveEnviarCorpoQuandoInformado                               Pass                                                                                                                                                                       116         
+OrgOriginGetEmpreendimentosApiTest.deveMontarRequisicaoERegistrarDadosDaChamadaEmCasoDeSucesso  Pass                                                                                                                                                                       16          
+OrgOriginGetEmpreendimentosApiTest.deveUsarAProximaPaginaComoEndpoint                           Pass                                                                                                                                                                       21          
+OrgOriginEmpreendimentosServiceTest.deveBuscarTodasAsPaginasDeEmpreendimentosEUnidades          Fail     OrgOriginEmpreendimentosService.FalhaIntegracaoException: Org Base indisponível: You have uncommitted work pending. Please commit or rollback before calling out  
+                                                                                                         Class.OrgOriginEmpreendimentosService.enviar: line 83, column 1                                                                                                   
+                                                                                                         Class.OrgOriginEmpreendimentosService.consultarEmpreendimentos: line 52, column 1                                                                                 
+                                                                                                         Class.OrgOriginEmpreendimentosServiceTest.deveBuscarTodasAsPaginasDeEmpreendimentosEUnidades: line 34, column 1                                                               
+OrgOriginEmpreendimentosServiceTest.deveDesfazerTudoQuandoGravacaoDasUnidadesFalha              Pass                                                                                                                                                                       512         
+OrgOriginEmpreendimentosServiceTest.deveImportarComOPerfilDoUsuarioQueAgendaOJob                Pass                                                                                                                                                                       537         
+OrgOriginEmpreendimentosServiceTest.deveInserirNovosEAtualizarExistentesSemDuplicar             Pass                                                                                                                                                                       377         
+OrgOriginEmpreendimentosServiceTest.deveListarNoLogTodasAsUnidadesComProblemaPeloCodigo         Pass                                                                                                                                                                       252         
+OrgOriginEmpreendimentosServiceTest.deveRegistrarLogMesmoComRespostaMuitoGrande                 Pass                                                                                                                                                                       3456        
+OrgOriginEmpreendimentosServiceTest.naoDeveGravarQuandoFalharOTokenOAuth                        Pass                                                                                                                                                                       150         
+OrgOriginEmpreendimentosServiceTest.naoDeveGravarQuandoIndisponivel                             Pass                                                                                                                                                                       128         
+OrgOriginEmpreendimentosServiceTest.naoDeveGravarQuandoNaoAutorizado                            Pass                                                                                                                                                                       148         
+OrgOriginEmpreendimentosServiceTest.naoDeveGravarQuandoOcorreTimeout                            Pass                                                                                                                                                                       144         
+OrgOriginEmpreendimentosServiceTest.naoDeveGravarQuandoPaginaDeUnidadesForInvalida              Pass                                                                                                                                                                       138         
+OrgOriginEmpreendimentosServiceTest.naoDeveGravarQuandoPaginacaoVierSemProximaUrl               Pass                                                                                                                                                                       152         
+OrgOriginEmpreendimentosServiceTest.naoDeveGravarQuandoRespostaInvalida                         Pass                                                                                                                                                                       139         
+
+
+=== Apex Code Coverage by Class
+CLASSES                             PERCENT  UNCOVERED LINES   
+──────────────────────────────────  ───────  ──────────────────
+EmpreendimentosDTO                  100%                       
+EmpreendimentosIntegracaoQueueable  100%                       
+EmpreendimentosIntegracaoSchedule   100%                       
+EmpreendimentosIntegracaoFinalizer  100%                       
+ApiBase                             87%      33,34,51,78,79,...
+CodeLogger                          29%      30,39,40,41,45,...
+LogsDTO                             7%       17,18,19,20,21,...
+OrgOriginApiBase                    100%                       
+OrgOriginEmpreendimentosService     96%      73,74,75,107,108  
+OrgOriginGetEmpreendimentosApi      100%                       
+SDO_Tool_SalesforceRewind_User      50%      3                 
+
+
+=== Test Setup Time by Test Class for Run 707bm00001Z84y3
+TEST SETUP METHOD NAME                     SETUP TIME
+─────────────────────────────────────────  ──────────
+OrgOriginEmpreendimentosServiceTest.setup  5813      
+
+
+=== Test Summary
+NAME                 VALUE                            
+───────────────────  ─────────────────────────────────
+Outcome              Failed                           
+Tests Ran            30                               
+Pass Rate            97%                              
+Fail Rate            3%                               
+Skip Rate            0%                               
+Test Run Id          707bm00001Z84y3                  
+Test Setup Time      5813 ms                          
+Test Execution Time  8155 ms                          
+Test Total Time      13968 ms                         
+Org Id               00Dbm00000nAZreEAG               
+Username             arlen.ortiz@codeart.solutions.sdo
+Org Wide Coverage    0%                               

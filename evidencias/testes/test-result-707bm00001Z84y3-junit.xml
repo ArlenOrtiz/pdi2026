@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2026-11-24T13:04:32.000Z" hostname="https://co1782129172879.my.salesforce.com" tests="30" failures="1"  errors="0"  time="8.15">
+        <properties>
+            <property name="outcome" value="Failed"/>
+            <property name="testsRan" value="30"/>
+            <property name="passing" value="29"/>
+            <property name="failing" value="1"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="97%"/>
+            <property name="failRate" value="3%"/>
+            <property name="testStartTime" value="Tue Nov 24 2026 10:04:32"/>
+            <property name="testSetupTimeInMs" value="5813"/>
+            <property name="testExecutionTime" value="8.15 s"/>
+            <property name="testTotalTime" value="13.97 s"/>
+            <property name="commandTime" value="0.21 s"/>
+            <property name="hostname" value="https://co1782129172879.my.salesforce.com"/>
+            <property name="orgId" value="00Dbm00000nAZreEAG"/>
+            <property name="username" value="arlen.ortiz@codeart.solutions.sdo"/>
+            <property name="testRunId" value="707bm00001Z84y3"/>
+            <property name="userId" value="005bm00000RJuyDAAT"/>
+            <property name="coveredLines" value="285"/>
+            <property name="testRunCoverage" value="78%"/>
+            <property name="orgWideCoverage" value="0%"/>
+        </properties>
+        <testcase name="deveConverterUnidadeComNumerosNulos" classname="EmpreendimentosDTOTest" time="0.14">
+        </testcase>
+        <testcase name="deveLancarExcecaoQuandoNumeroEstiverForaDoContrato" classname="EmpreendimentosDTOTest" time="0.03">
+        </testcase>
+        <testcase name="deveTratarEmpreendimentoSemUnidadesECamposNulos" classname="EmpreendimentosDTOTest" time="0.03">
+        </testcase>
+        <testcase name="deveTratarPaginaSemRecords" classname="EmpreendimentosDTOTest" time="0.04">
+        </testcase>
+        <testcase name="queueableDeveExecutarAImportacao" classname="EmpreendimentosIntegracaoTest" time="1.06">
+        </testcase>
+        <testcase name="scheduleDeveAgendarACada4Horas" classname="EmpreendimentosIntegracaoTest" time="0.39">
+        </testcase>
+        <testcase name="deveRegistrarLogQuandoQueueTerminaComExcecaoNaoTratada" classname="EmpreendimentosIntegracaoFinalizerTest" time="0.26">
+        </testcase>
+        <testcase name="naoDeveRegistrarLogQuandoQueueTerminaComSucesso" classname="EmpreendimentosIntegracaoFinalizerTest" time="0.01">
+        </testcase>
+        <testcase name="deveClassificar401ComoAutenticacao" classname="OrgOriginGetEmpreendimentosApiTest" time="0.08">
+        </testcase>
+        <testcase name="deveClassificar503ComoIndisponivel" classname="OrgOriginGetEmpreendimentosApiTest" time="0.04">
+        </testcase>
+        <testcase name="deveClassificarFalhaNoTokenComoAutenticacao" classname="OrgOriginGetEmpreendimentosApiTest" time="0.02">
+        </testcase>
+        <testcase name="deveClassificarOutrosStatusComoRejeitada" classname="OrgOriginGetEmpreendimentosApiTest" time="0.02">
+        </testcase>
+        <testcase name="deveClassificarTimeoutComoIndisponivel" classname="OrgOriginGetEmpreendimentosApiTest" time="0.02">
+        </testcase>
+        <testcase name="deveEnviarCorpoQuandoInformado" classname="OrgOriginGetEmpreendimentosApiTest" time="0.12">
+        </testcase>
+        <testcase name="deveMontarRequisicaoERegistrarDadosDaChamadaEmCasoDeSucesso" classname="OrgOriginGetEmpreendimentosApiTest" time="0.02">
+        </testcase>
+        <testcase name="deveUsarAProximaPaginaComoEndpoint" classname="OrgOriginGetEmpreendimentosApiTest" time="0.02">
+        </testcase>
+        <testcase name="deveBuscarTodasAsPaginasDeEmpreendimentosEUnidades" classname="OrgOriginEmpreendimentosServiceTest" time="0.06">
+            <failure message="OrgOriginEmpreendimentosService.FalhaIntegracaoException: Org Base indisponível: You have uncommitted work pending. Please commit or rollback before calling out"><![CDATA[Class.OrgOriginEmpreendimentosService.enviar: line 83, column 1
+Class.OrgOriginEmpreendimentosService.consultarEmpreendimentos: line 52, column 1
+Class.OrgOriginEmpreendimentosServiceTest.deveBuscarTodasAsPaginasDeEmpreendimentosEUnidades: line 34, column 1]]></failure>
+        </testcase>
+        <testcase name="deveDesfazerTudoQuandoGravacaoDasUnidadesFalha" classname="OrgOriginEmpreendimentosServiceTest" time="0.51">
+        </testcase>
+        <testcase name="deveImportarComOPerfilDoUsuarioQueAgendaOJob" classname="OrgOriginEmpreendimentosServiceTest" time="0.54">
+        </testcase>
+        <testcase name="deveInserirNovosEAtualizarExistentesSemDuplicar" classname="OrgOriginEmpreendimentosServiceTest" time="0.38">
+        </testcase>
+        <testcase name="deveListarNoLogTodasAsUnidadesComProblemaPeloCodigo" classname="OrgOriginEmpreendimentosServiceTest" time="0.25">
+        </testcase>
+        <testcase name="deveRegistrarLogMesmoComRespostaMuitoGrande" classname="OrgOriginEmpreendimentosServiceTest" time="3.46">
+        </testcase>
+        <testcase name="naoDeveGravarQuandoFalharOTokenOAuth" classname="OrgOriginEmpreendimentosServiceTest" time="0.15">
+        </testcase>
+        <testcase name="naoDeveGravarQuandoIndisponivel" classname="OrgOriginEmpreendimentosServiceTest" time="0.13">
+        </testcase>
+        <testcase name="naoDeveGravarQuandoNaoAutorizado" classname="OrgOriginEmpreendimentosServiceTest" time="0.15">
+        </testcase>
+        <testcase name="naoDeveGravarQuandoOcorreTimeout" classname="OrgOriginEmpreendimentosServiceTest" time="0.14">
+        </testcase>
+        <testcase name="naoDeveGravarQuandoPaginaDeUnidadesForInvalida" classname="OrgOriginEmpreendimentosServiceTest" time="0.14">
+        </testcase>
+        <testcase name="naoDeveGravarQuandoPaginacaoVierSemProximaUrl" classname="OrgOriginEmpreendimentosServiceTest" time="0.15">
+        </testcase>
+        <testcase name="naoDeveGravarQuandoRespostaInvalida" classname="OrgOriginEmpreendimentosServiceTest" time="0.14">
+        </testcase>
+    </testsuite>
+</testsuites>
